@@ -261,7 +261,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OVA-bc-Qch"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Survey Start" selectedImage="studentdesk" catalog="system" id="gRA-yg-grW">
+                    <tabBarItem key="tabBarItem" title="Survey Start" image="studentdesk" catalog="system" selectedImage="studentdesk" id="gRA-yg-grW">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
@@ -1100,44 +1100,14 @@
                                 <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SurveyCell" id="dBY-dq-58u">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="52.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SurveyCell" rowHeight="55" id="dBY-dq-58u">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dBY-dq-58u" id="Y68-eJ-4yj">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="52.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participant ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a70-C7-Zdd">
-                                                    <rect key="frame" x="20" y="11" width="170" height="30.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="Ajm-TJ-eFw"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="Pgy-x9-cCb"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="25"/>
-                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbH-Ag-phe">
-                                                    <rect key="frame" x="220" y="11" width="170" height="30.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="17w-sX-uJK"/>
-                                                        <constraint firstAttribute="height" constant="30" id="k04-dm-W86"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="25"/>
-                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="a70-C7-Zdd" firstAttribute="leading" secondItem="Y68-eJ-4yj" secondAttribute="leadingMargin" id="7UK-Dr-b0k"/>
-                                                <constraint firstItem="a70-C7-Zdd" firstAttribute="top" secondItem="Y68-eJ-4yj" secondAttribute="topMargin" id="A2S-ya-n6w"/>
-                                                <constraint firstItem="hbH-Ag-phe" firstAttribute="top" secondItem="Y68-eJ-4yj" secondAttribute="topMargin" id="KRN-nz-LBu"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="a70-C7-Zdd" secondAttribute="bottom" id="Tpg-wc-O3d"/>
-                                                <constraint firstItem="hbH-Ag-phe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="a70-C7-Zdd" secondAttribute="trailing" constant="8" symbolic="YES" id="s2g-Ed-KlE"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="hbH-Ag-phe" secondAttribute="bottom" id="yzL-u5-ozr"/>
-                                                <constraint firstAttribute="trailing" secondItem="hbH-Ag-phe" secondAttribute="trailing" constant="24" id="z6s-dc-NRP"/>
-                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.27058823529999998" green="0.47833834809999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="dQk-fh-XQV" kind="show" identifier="goToStudy" id="cTq-cV-CuN"/>
                                         </connections>
@@ -1158,11 +1128,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Szk-rD-Dqn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Completed" selectedImage="tray.full.fill" catalog="system" id="QzU-27-14q">
+                    <tabBarItem key="tabBarItem" title="Completed" image="tray.full.fill" catalog="system" selectedImage="tray.full.fill" id="QzU-27-14q">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="numberLabel" destination="qNy-6l-6sc" id="fwE-EN-Usy"/>
+                        <outlet property="tableView" destination="nks-A7-9cc" id="rXW-N7-wng"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vpv-Cw-Efh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
