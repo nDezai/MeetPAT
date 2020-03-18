@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC30D28E242247F700F16C18 /* SurveyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30D28D242247F700F16C18 /* SurveyCell.swift */; };
 		ACB0E4DC242230E4004F6FE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACB0E4DB242230E4004F6FE8 /* GoogleService-Info.plist */; };
 		ACB0E4E02422329D004F6FE8 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0E4DF2422329D004F6FE8 /* WelcomeVC.swift */; };
 		ACB0E4E2242232E7004F6FE8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0E4E1242232E7004F6FE8 /* LoginVC.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		529CFF3DF4F1DFB66866A325 /* Pods-MeetPAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetPAT.debug.xcconfig"; path = "Target Support Files/Pods-MeetPAT/Pods-MeetPAT.debug.xcconfig"; sourceTree = "<group>"; };
+		AC30D28D242247F700F16C18 /* SurveyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCell.swift; sourceTree = "<group>"; };
 		ACB0E4DB242230E4004F6FE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACB0E4DF2422329D004F6FE8 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		ACB0E4E1242232E7004F6FE8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				ACB224A924222C38003D619F /* User.swift */,
 				ACB224AF24222CEE003D619F /* CompletedSurvey.swift */,
+				AC30D28D242247F700F16C18 /* SurveyCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC30D28E242247F700F16C18 /* SurveyCell.swift in Sources */,
 				ACB224AD24222C54003D619F /* Constants.swift in Sources */,
 				ACB0E4E2242232E7004F6FE8 /* LoginVC.swift in Sources */,
 				ACB224CC24222F49003D619F /* Utilities.swift in Sources */,

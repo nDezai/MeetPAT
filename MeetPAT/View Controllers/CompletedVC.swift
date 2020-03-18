@@ -35,6 +35,8 @@ class CompletedVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             
             self.tableView.delegate = self
             self.tableView.dataSource = self
+            self.tableView.register(SurveyCell.self, forCellReuseIdentifier: "SurveyCell")
+            
             self.completedSurveys = newSurveys
             self.tableView.reloadData()
             self.numberLabel.text = "\(snapshot.childrenCount)"
@@ -61,26 +63,33 @@ class CompletedVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SurveyCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SurveyCell", for: indexPath) as! SurveyCell
         let survey = completedSurveys[indexPath.row]
         
-        cell.textLabel?.text = "\(survey.sampleID) - \(survey.participantID)"
-        cell.textLabel?.textAlignment = .center
-        cell.textLabel?.textColor = .white
-        cell.textLabel?.font = UIFont.systemFont(ofSize: 25)
+        cell.surveyLabel.text = "\(survey.sampleID) - \(survey.participantID)"
+        cell.surveyLabel.textAlignment = .center
+        cell.backgroundColor = #colorLiteral(red: 0.004859850742, green: 0.09608627111, blue: 0.5749928951, alpha: 1)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 100
     }
     
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         return indexPath
     }
-    
+   
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let survey = self.completedSurveys[indexPath.row]
         performSegue(withIdentifier: "goToStudy", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToStudy" {
+            let breakdownVC = segue.destination as! StudyBreakdownVC
+        }
+        
     }
 }
