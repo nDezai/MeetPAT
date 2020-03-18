@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ACB0E4DC242230E4004F6FE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACB0E4DB242230E4004F6FE8 /* GoogleService-Info.plist */; };
-		ACB0E4DE24223152004F6FE8 /* Faces.imageset in Resources */ = {isa = PBXBuildFile; fileRef = ACB0E4DD24223152004F6FE8 /* Faces.imageset */; };
 		ACB0E4E02422329D004F6FE8 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0E4DF2422329D004F6FE8 /* WelcomeVC.swift */; };
 		ACB0E4E2242232E7004F6FE8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0E4E1242232E7004F6FE8 /* LoginVC.swift */; };
 		ACB0E4E424223357004F6FE8 /* StudyTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0E4E324223357004F6FE8 /* StudyTabVC.swift */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		529CFF3DF4F1DFB66866A325 /* Pods-MeetPAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetPAT.debug.xcconfig"; path = "Target Support Files/Pods-MeetPAT/Pods-MeetPAT.debug.xcconfig"; sourceTree = "<group>"; };
 		ACB0E4DB242230E4004F6FE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		ACB0E4DD24223152004F6FE8 /* Faces.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Faces.imageset; sourceTree = "<group>"; };
 		ACB0E4DF2422329D004F6FE8 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		ACB0E4E1242232E7004F6FE8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		ACB0E4E324223357004F6FE8 /* StudyTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTabVC.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				ACB224A824222C17003D619F /* Views */,
 				ACB224AE24222C5A003D619F /* Helpers */,
 				ACB2249C24222BC2003D619F /* Assets.xcassets */,
-				ACB0E4DD24223152004F6FE8 /* Faces.imageset */,
 				ACB224A124222BC2003D619F /* Info.plist */,
 			);
 			path = MeetPAT;
@@ -226,7 +223,6 @@
 				ACB0E4DC242230E4004F6FE8 /* GoogleService-Info.plist in Resources */,
 				ACB2249D24222BC2003D619F /* Assets.xcassets in Resources */,
 				ACB2249B24222BC0003D619F /* Main.storyboard in Resources */,
-				ACB0E4DE24223152004F6FE8 /* Faces.imageset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
