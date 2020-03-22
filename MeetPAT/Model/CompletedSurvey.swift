@@ -55,7 +55,7 @@ struct CompletedSurveys {
         guard
             let value = snapshot.value as? [String: AnyObject],
             let addedByUser = value["addedByUser"] as? String,
-        let participantID = value["participantID"] as? String,
+            let participantID = value["participantID"] as? String,
             let sampleID = value["sampleID"] as? String,
             let ageID = value["ageID"] as? Int,
             let countryID = value["countryID"] as? String,

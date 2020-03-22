@@ -68,7 +68,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.28429979090000002" green="0.46235954759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DKH-SA-Ojb" firstAttribute="leading" secondItem="ezq-5L-EYy" secondAttribute="leading" constant="50" id="1qc-o7-Ivx"/>
                             <constraint firstItem="Bjf-V1-Pe0" firstAttribute="leading" secondItem="ezq-5L-EYy" secondAttribute="leading" constant="70" id="7XH-ap-OA8"/>
@@ -187,7 +187,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.28429979090000002" green="0.46235954759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WSA-0e-i6N" firstAttribute="top" secondItem="KSs-nJ-JDY" secondAttribute="bottom" constant="40" id="3eH-ih-ch3"/>
                             <constraint firstItem="L3R-wH-MjA" firstAttribute="leading" secondItem="kkh-Vp-eEw" secondAttribute="leading" constant="50" id="IJh-b5-xFb"/>
@@ -214,6 +214,69 @@
             </objects>
             <point key="canvasLocation" x="1805.7971014492755" y="137.94642857142856"/>
         </scene>
+        <!--Consent-->
+        <scene sceneID="ABM-GM-giM">
+            <objects>
+                <viewController title="Consent" id="LFo-6u-d0l" customClass="ConsentVC" customModule="MeetPAT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Akf-2C-j4e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4h-8u-ZG9">
+                                <rect key="frame" x="50" y="513" width="314" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7xb-QA-KWU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
+                                <state key="normal" title="Consent Form">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="consentPressed:" destination="LFo-6u-d0l" eventType="touchUpInside" id="AVB-eQ-1cB"/>
+                                    <action selector="startPressed:" destination="t2J-72-UZr" eventType="touchUpInside" id="Pls-8p-PUW"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gT1-Va-icN">
+                                <rect key="frame" x="50" y="60" width="314" height="353"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAT_Image" translatesAutoresizingMaskIntoConstraints="NO" id="tit-YJ-dzI">
+                                        <rect key="frame" x="74" y="0.0" width="166.5" height="166.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before you start, please read the 'CONSENT FORM'" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="420" translatesAutoresizingMaskIntoConstraints="NO" id="x6Z-5R-GjG">
+                                        <rect key="frame" x="0.0" y="186.5" width="314" height="166.5"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a4h-8u-ZG9" firstAttribute="leading" secondItem="18h-Qg-XTJ" secondAttribute="leading" constant="50" id="67s-Aa-6d8"/>
+                            <constraint firstAttribute="trailing" secondItem="gT1-Va-icN" secondAttribute="trailing" constant="50" id="9sZ-38-H55"/>
+                            <constraint firstItem="a4h-8u-ZG9" firstAttribute="top" secondItem="gT1-Va-icN" secondAttribute="bottom" constant="100" id="K96-4M-CeK"/>
+                            <constraint firstItem="gT1-Va-icN" firstAttribute="leading" secondItem="18h-Qg-XTJ" secondAttribute="leading" constant="50" id="XFF-p7-9sl"/>
+                            <constraint firstItem="gT1-Va-icN" firstAttribute="top" secondItem="18h-Qg-XTJ" secondAttribute="top" constant="60" id="hgb-Mi-pvv"/>
+                            <constraint firstItem="18h-Qg-XTJ" firstAttribute="trailing" secondItem="a4h-8u-ZG9" secondAttribute="trailing" constant="50" id="hi6-zp-a8C"/>
+                            <constraint firstItem="a4h-8u-ZG9" firstAttribute="top" secondItem="gT1-Va-icN" secondAttribute="bottom" constant="100" id="pi3-rP-ufI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="18h-Qg-XTJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Consent" image="checkmark.seal.fill" catalog="system" id="iNs-wg-ECO">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="utM-bo-a64"/>
+                    <connections>
+                        <outlet property="consentButton" destination="a4h-8u-ZG9" id="VPE-XU-1My"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oqq-s0-k4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3441" y="850"/>
+        </scene>
         <!--Start Study-->
         <scene sceneID="nuG-oa-VbO">
             <objects>
@@ -237,8 +300,11 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIK-45-6F6">
-                                <rect key="frame" x="50" y="491.5" width="314" height="47"/>
+                                <rect key="frame" x="50" y="491.5" width="314" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="g3S-bs-87y"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="30"/>
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -250,7 +316,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.26882560300000002" green="0.47833834809999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CIK-45-6F6" firstAttribute="leading" secondItem="OVA-bc-Qch" secondAttribute="leading" constant="50" id="DqE-Eh-ePk"/>
                             <constraint firstItem="OVA-bc-Qch" firstAttribute="trailing" secondItem="CIK-45-6F6" secondAttribute="trailing" constant="50" id="cSy-qG-aAF"/>
@@ -270,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Wj-gw-0Ch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3442" y="850"/>
+            <point key="canvasLocation" x="3441" y="1570"/>
         </scene>
         <!--Scroll Study-->
         <scene sceneID="kLK-2U-QY5">
@@ -961,7 +1027,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TEA-Ro-hQN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Survey To Complete" id="yyt-O3-gut"/>
+                    <navigationItem key="navigationItem" title="Survey" id="yyt-O3-gut"/>
                     <size key="freeformSize" width="414" height="2400"/>
                     <connections>
                         <outlet property="aFeelSlider" destination="vWw-Qs-Bxw" id="0Z3-et-s5f"/>
@@ -1043,7 +1109,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.28429979090000002" green="0.46235954759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Mro-dg-PiW" firstAttribute="top" secondItem="TEx-xm-kGy" secondAttribute="bottom" constant="140" id="1BJ-OS-cz4"/>
                             <constraint firstItem="wb5-t8-Z8B" firstAttribute="trailing" secondItem="TEx-xm-kGy" secondAttribute="trailing" constant="50" id="8F5-Pd-Oxm"/>
@@ -1113,7 +1179,7 @@
                                 <sections/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.28429979090000002" green="0.46235954759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nks-A7-9cc" firstAttribute="leading" secondItem="Szk-rD-Dqn" secondAttribute="leading" id="9fM-i2-Q8t"/>
                             <constraint firstItem="0en-Rm-f4m" firstAttribute="top" secondItem="Szk-rD-Dqn" secondAttribute="top" constant="20" id="BNc-bb-hTB"/>
@@ -1131,28 +1197,11 @@
                     <connections>
                         <outlet property="numberLabel" destination="qNy-6l-6sc" id="fwE-EN-Usy"/>
                         <outlet property="tableView" destination="nks-A7-9cc" id="rXW-N7-wng"/>
-                        <segue destination="dQk-fh-XQV" kind="show" identifier="goToStudy" id="JNw-uc-a9y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vpv-Cw-Efh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3440.579710144928" y="136.60714285714286"/>
-        </scene>
-        <!--Study BreakdownVC-->
-        <scene sceneID="vB5-O7-TaI">
-            <objects>
-                <viewController id="dQk-fh-XQV" customClass="StudyBreakdownVC" customModule="MeetPAT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zaA-lN-rku">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.74117647060000003" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="Frv-a6-SZk"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="h8f-I4-pPH"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aBK-Vg-ybs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4258" y="137"/>
         </scene>
         <!--StudyTab-->
         <scene sceneID="gk3-6F-hyk">
@@ -1170,12 +1219,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.28429979090000002" green="0.46235954759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <outlet property="logOutButton" destination="JY3-W0-WQM" id="LW6-bn-Wka"/>
                         <segue destination="9Aj-lD-Env" kind="relationship" relationship="viewControllers" id="Y4g-gI-fFX"/>
+                        <segue destination="LFo-6u-d0l" kind="relationship" relationship="viewControllers" id="OHC-4Y-DaM"/>
                         <segue destination="t2J-72-UZr" kind="relationship" relationship="viewControllers" id="LaX-g5-4Mb"/>
                     </connections>
                 </tabBarController>
@@ -1192,7 +1242,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.28429979090000002" green="0.46235954759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -1210,6 +1260,7 @@
     <resources>
         <image name="Faces" width="327" height="60"/>
         <image name="PAT_Image" width="166.5" height="166.5"/>
+        <image name="checkmark.seal.fill" catalog="system" width="64" height="60"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="studentdesk" catalog="system" width="62" height="64"/>
         <image name="tray.full.fill" catalog="system" width="64" height="44"/>

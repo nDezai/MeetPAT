@@ -155,16 +155,16 @@ class StudyScrollVC: UIViewController, UIScrollViewDelegate {
         let ageID = Int(ageTF.text!)!
         let countryID = countryTF.text!
         
-        let iFeelID = Double(iFeelTF.text!)!
-        let aFeelID = Double(aFeelTF.text!)!
-        let gritID = Double(gritTF.text!)!
-        let iTasteID = Double(iTasteTF.text!)!
-        let aTasteID = Double(aTasteTF.text!)!
-        let iSweetID = Double(iSweetTF.text!)!
-        let aSweetID = Double(aSweetTF.text!)!
-        let flavourID = Double(flavourTF.text!)!
-        let textureID = Double(textureTF.text!)!
-        let overallID = Double(overallTF.text!)!
+        let iFeelID = Double(iFeelSlider.value)
+        let aFeelID = Double(aFeelSlider.value)
+        let gritID = Double(gritSlider.value)
+        let iTasteID = Double(iTasteSlider.value)
+        let aTasteID = Double(aTasteSlider.value)
+        let iSweetID = Double(iSweetSlider.value)
+        let aSweetID = Double(aSweetSlider.value)
+        let flavourID = Double(flavourSlider.value)
+        let textureID = Double(textureSlider.value)
+        let overallID = Double(overallSlider.value)
         
         let completedSurveys = CompletedSurveys(addedByUser: self.user.email,
                                                 participantID: participantID,

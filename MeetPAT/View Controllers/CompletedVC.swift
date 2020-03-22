@@ -82,14 +82,10 @@ class CompletedVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let survey = self.completedSurveys[indexPath.row]
-        performSegue(withIdentifier: "goToStudy", sender: self)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToStudy" {
-            let breakdownVC = segue.destination as! StudyBreakdownVC
-        }
         
     }
 }

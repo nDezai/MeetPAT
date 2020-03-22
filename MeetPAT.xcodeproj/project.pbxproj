@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC2E2B4C2427DD210020979D /* ConsentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E2B4B2427DD210020979D /* ConsentVC.swift */; };
+		AC2E2B6E2427E0770020979D /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2E2B6B2427E0610020979D /* ResearchKit.framework */; };
+		AC2E2B6F2427E0770020979D /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC2E2B6B2427E0610020979D /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC30D28E242247F700F16C18 /* SurveyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30D28D242247F700F16C18 /* SurveyCell.swift */; };
 		ACB0E4DC242230E4004F6FE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACB0E4DB242230E4004F6FE8 /* GoogleService-Info.plist */; };
 		ACB0E4E02422329D004F6FE8 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0E4DF2422329D004F6FE8 /* WelcomeVC.swift */; };
 		ACB0E4E2242232E7004F6FE8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0E4E1242232E7004F6FE8 /* LoginVC.swift */; };
 		ACB0E4E424223357004F6FE8 /* StudyTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0E4E324223357004F6FE8 /* StudyTabVC.swift */; };
 		ACB0E4E624223399004F6FE8 /* CompletedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0E4E524223399004F6FE8 /* CompletedVC.swift */; };
-		ACB0E4E8242233DE004F6FE8 /* StudyBreakdownVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0E4E7242233DE004F6FE8 /* StudyBreakdownVC.swift */; };
 		ACB2249424222BC0003D619F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2249324222BC0003D619F /* AppDelegate.swift */; };
 		ACB2249624222BC0003D619F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB2249524222BC0003D619F /* SceneDelegate.swift */; };
 		ACB2249B24222BC0003D619F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB2249924222BC0003D619F /* Main.storyboard */; };
@@ -29,15 +31,47 @@
 		B15B3682AE1874A0A00E92AC /* Pods_MeetPAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7476EABC7CA95B48D5542EF /* Pods_MeetPAT.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AC2E2B6A2427E0610020979D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC2E2B642427E0600020979D /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		AC2E2B6C2427E0610020979D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC2E2B642427E0600020979D /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC2E2B632427DF2F0020979D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC2E2B6F2427E0770020979D /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		529CFF3DF4F1DFB66866A325 /* Pods-MeetPAT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeetPAT.debug.xcconfig"; path = "Target Support Files/Pods-MeetPAT/Pods-MeetPAT.debug.xcconfig"; sourceTree = "<group>"; };
+		AC2E2B4B2427DD210020979D /* ConsentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentVC.swift; sourceTree = "<group>"; };
+		AC2E2B642427E0600020979D /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "ResearchKit-MeetPAT/ResearchKit.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		AC30D28D242247F700F16C18 /* SurveyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCell.swift; sourceTree = "<group>"; };
 		ACB0E4DB242230E4004F6FE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACB0E4DF2422329D004F6FE8 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		ACB0E4E1242232E7004F6FE8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		ACB0E4E324223357004F6FE8 /* StudyTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTabVC.swift; sourceTree = "<group>"; };
 		ACB0E4E524223399004F6FE8 /* CompletedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedVC.swift; sourceTree = "<group>"; };
-		ACB0E4E7242233DE004F6FE8 /* StudyBreakdownVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyBreakdownVC.swift; sourceTree = "<group>"; };
 		ACB2249024222BC0003D619F /* MeetPAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetPAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB2249324222BC0003D619F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACB2249524222BC0003D619F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2E2B6E2427E0770020979D /* ResearchKit.framework in Frameworks */,
 				B15B3682AE1874A0A00E92AC /* Pods_MeetPAT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,9 +120,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AC2E2B652427E0600020979D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC2E2B6B2427E0610020979D /* ResearchKit.framework */,
+				AC2E2B6D2427E0610020979D /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		ACB2248724222BC0003D619F = {
 			isa = PBXGroup;
 			children = (
+				AC2E2B642427E0600020979D /* ResearchKit.xcodeproj */,
 				ACB2249224222BC0003D619F /* MeetPAT */,
 				ACB2249124222BC0003D619F /* Products */,
 				99134DA8668F94C156B641DA /* Pods */,
@@ -125,7 +170,7 @@
 				ACB0E4E1242232E7004F6FE8 /* LoginVC.swift */,
 				ACB0E4E324223357004F6FE8 /* StudyTabVC.swift */,
 				ACB0E4E524223399004F6FE8 /* CompletedVC.swift */,
-				ACB0E4E7242233DE004F6FE8 /* StudyBreakdownVC.swift */,
+				AC2E2B4B2427DD210020979D /* ConsentVC.swift */,
 				ACB224BF24222EA9003D619F /* StartStudyVC.swift */,
 				ACB224BD24222EA9003D619F /* StudyScrollVC.swift */,
 				ACB224BB24222EA9003D619F /* Study3VC.swift */,
@@ -174,6 +219,7 @@
 				ACB2248D24222BC0003D619F /* Frameworks */,
 				ACB2248E24222BC0003D619F /* Resources */,
 				86BD48DF2F6F2E909F7FCC52 /* [CP] Embed Pods Frameworks */,
+				AC2E2B632427DF2F0020979D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,12 +256,35 @@
 			mainGroup = ACB2248724222BC0003D619F;
 			productRefGroup = ACB2249124222BC0003D619F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AC2E2B652427E0600020979D /* Products */;
+					ProjectRef = AC2E2B642427E0600020979D /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				ACB2248F24222BC0003D619F /* MeetPAT */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AC2E2B6B2427E0610020979D /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = AC2E2B6A2427E0610020979D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AC2E2B6D2427E0610020979D /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = AC2E2B6C2427E0610020979D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ACB2248E24222BC0003D619F /* Resources */ = {
@@ -280,10 +349,10 @@
 			files = (
 				AC30D28E242247F700F16C18 /* SurveyCell.swift in Sources */,
 				ACB224AD24222C54003D619F /* Constants.swift in Sources */,
+				AC2E2B4C2427DD210020979D /* ConsentVC.swift in Sources */,
 				ACB0E4E2242232E7004F6FE8 /* LoginVC.swift in Sources */,
 				ACB224CC24222F49003D619F /* Utilities.swift in Sources */,
 				ACB224AA24222C38003D619F /* User.swift in Sources */,
-				ACB0E4E8242233DE004F6FE8 /* StudyBreakdownVC.swift in Sources */,
 				ACB0E4E02422329D004F6FE8 /* WelcomeVC.swift in Sources */,
 				ACB0E4E624223399004F6FE8 /* CompletedVC.swift in Sources */,
 				ACB224B024222CEE003D619F /* CompletedSurvey.swift in Sources */,
