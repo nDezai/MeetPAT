@@ -29,34 +29,15 @@ class StudyScrollVC: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var ageTF: UITextField!
     @IBOutlet weak var countryTF: UITextField!
     
-    @IBOutlet weak var iFeelTF: UITextField!
     @IBOutlet weak var iFeelSlider: UISlider!
-    
-    @IBOutlet weak var aFeelTF: UITextField!
     @IBOutlet weak var aFeelSlider: UISlider!
-    
-    @IBOutlet weak var gritTF: UITextField!
     @IBOutlet weak var gritSlider: UISlider!
-    
-    @IBOutlet weak var iTasteTF: UITextField!
     @IBOutlet weak var iTasteSlider: UISlider!
-    
-    @IBOutlet weak var aTasteTF: UITextField!
     @IBOutlet weak var aTasteSlider: UISlider!
-    
-    @IBOutlet weak var iSweetTF: UITextField!
     @IBOutlet weak var iSweetSlider: UISlider!
-    
-    @IBOutlet weak var aSweetTF: UITextField!
     @IBOutlet weak var aSweetSlider: UISlider!
-    
-    @IBOutlet weak var flavourTF: UITextField!
     @IBOutlet weak var flavourSlider: UISlider!
-    
-    @IBOutlet weak var textureTF: UITextField!
     @IBOutlet weak var textureSlider: UISlider!
-    
-    @IBOutlet weak var overallTF: UITextField!
     @IBOutlet weak var overallSlider: UISlider!
     
     @IBOutlet weak var saveButton: UIButton!
@@ -94,53 +75,53 @@ class StudyScrollVC: UIViewController, UIScrollViewDelegate {
     // MARK: - IBActions
     
     @IBAction func iFeelSliderChanged(_ sender: UISlider) {
-        let iFeelValue = Int(iFeelSlider.value)
-        iFeelTF.text = "\(iFeelValue)"
+        // let iFeelValue = Int(iFeelSlider.value)
+        // iFeelTF.text = "\(iFeelValue)"
     }
     
     @IBAction func aFeelSliderChanged(_ sender: UISlider) {
-        let aFeelValue = Int(aFeelSlider.value)
-        aFeelTF.text = "\(aFeelValue)"
+        // let aFeelValue = Int(aFeelSlider.value)
+        // aFeelTF.text = "\(aFeelValue)"
     }
     
     @IBAction func gritSliderChanged(_ sender: UISlider) {
-        let gritValue = Int(gritSlider.value)
-        gritTF.text = "\(gritValue)"
+        // let gritValue = Int(gritSlider.value)
+        // gritTF.text = "\(gritValue)"
     }
     
     @IBAction func iTasteSliderChanged(_ sender: UISlider) {
-        let iTasteValue = Int(iTasteSlider.value)
-        iTasteTF.text = "\(iTasteValue)"
+        // let iTasteValue = Int(iTasteSlider.value)
+        // iTasteTF.text = "\(iTasteValue)"
     }
     
     @IBAction func aTasteSliderChanged(_ sender: UISlider) {
-        let aTasteValue = Int(aTasteSlider.value)
-        aTasteTF.text = "\(aTasteValue)"
+        // let aTasteValue = Int(aTasteSlider.value)
+        // aTasteTF.text = "\(aTasteValue)"
     }
     
     @IBAction func iSweetSliderChanged(_ sender: UISlider) {
-        let iSweetValue = Int(iSweetSlider.value)
-        iSweetTF.text = "\(iSweetValue)"
+        // let iSweetValue = Int(iSweetSlider.value)
+        // iSweetTF.text = "\(iSweetValue)"
     }
     
     @IBAction func aSweetSliderChanged(_ sender: UISlider) {
-        let aSweetValue = Int(aSweetSlider.value)
-        aSweetTF.text = "\(aSweetValue)"
+        // let aSweetValue = Int(aSweetSlider.value)
+        // aSweetTF.text = "\(aSweetValue)"
     }
     
     @IBAction func flavourSliderChanged(_ sender: UISlider) {
-        let flavourValue = Int(flavourSlider.value)
-        flavourTF.text = "\(flavourValue)"
+        // let flavourValue = Int(flavourSlider.value)
+        // flavourTF.text = "\(flavourValue)"
     }
     
     @IBAction func textureSliderChanged(_ sender: UISlider) {
-        let textureValue = Int(textureSlider.value)
-        textureTF.text = "\(textureValue)"
+        // let textureValue = Int(textureSlider.value)
+        // textureTF.text = "\(textureValue)"
     }
     
     @IBAction func overallSliderChanged(_ sender: UISlider) {
-        let overallValue = Int(overallSlider.value)
-        overallTF.text = "\(overallValue)"
+        // let overallValue = Int(overallSlider.value)
+        // overallTF.text = "\(overallValue)"
     }
     
     @IBAction func savePressed(_ sender: UIButton) {
@@ -192,25 +173,15 @@ class StudyScrollVC: UIViewController, UIScrollViewDelegate {
     func resetSlider() {
         // Reset sliders to 3 for ViewWillAppear
         iFeelSlider.value = 3
-        iFeelTF.text = "\(iFeelSlider.value)"
         aFeelSlider.value = 3
-        aFeelTF.text = "\(aFeelSlider.value)"
         gritSlider.value = 3
-        gritTF.text = "\(gritSlider.value)"
         iTasteSlider.value = 3
-        iTasteTF.text = "\(iTasteSlider.value)"
         aTasteSlider.value = 3
-        aTasteTF.text = "\(aTasteSlider.value)"
         iSweetSlider.value = 3
-        iSweetTF.text = "\(iSweetSlider.value)"
         aSweetSlider.value = 3
-        aSweetTF.text = "\(aSweetSlider.value)"
         flavourSlider.value = 3
-        flavourTF.text = "\(flavourSlider.value)"
         textureSlider.value = 3
-        textureTF.text = "\(textureSlider.value)"
         overallSlider.value = 3
-        overallTF.text = "\(overallSlider.value)"
     }
     
 //    func alertAppear() {
