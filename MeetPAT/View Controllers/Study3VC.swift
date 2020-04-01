@@ -29,7 +29,7 @@ class Study3VC: UIViewController {
     func setUpElements() {
         
         // Style the elements
-        Utilities.styleFilledButton(finishButton)
+        Utilities.surveyFilledButton(finishButton)
     }
     
 }

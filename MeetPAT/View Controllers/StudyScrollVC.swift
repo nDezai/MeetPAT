@@ -18,7 +18,7 @@ class StudyScrollVC: UIViewController, UIScrollViewDelegate {
     var completedSurveys: [CompletedSurveys] = []
     var user: User!
     let ref = Database.database().reference(withPath: "Completed-Surveys")
-    let usersRef = Database.database().reference(withPath: "online")
+    let usersRef = Database.database().reference(withPath: "Online")
     
     // MARK: - IBOutlets
     
@@ -200,6 +200,6 @@ class StudyScrollVC: UIViewController, UIScrollViewDelegate {
         Utilities.styleTextField(sampleTF)
         Utilities.styleTextField(ageTF)
         Utilities.styleTextField(countryTF)
-        Utilities.styleFilledButton(saveButton)
+        Utilities.surveyFilledButton(saveButton)
     }
 }

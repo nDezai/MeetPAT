@@ -26,6 +26,6 @@ class StartStudyVC: UIViewController {
     func setUpElement() {
         
         // Style the elements
-        Utilities.styleFilledButton(startButton)
+        Utilities.surveyFilledButton(startButton)
     }
 }

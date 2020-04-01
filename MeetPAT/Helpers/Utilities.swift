@@ -31,9 +31,17 @@ class Utilities {
     static func styleFilledButton(_ button:UIButton) {
         
         // Filled rounded corner style
-        button.backgroundColor = UIColor(red: 255.0 / 255.0, green: 149.0 / 255.0, blue: 0.0 / 255.0, alpha: 1.0)
+        button.backgroundColor = #colorLiteral(red: 0.08534555882, green: 0.02815807238, blue: 0.2609079778, alpha: 1)
         button.layer.cornerRadius = 25.0
         button.tintColor = UIColor.white
+    }
+    
+    static func surveyFilledButton(_ button:UIButton) {
+        
+        // Filled rounded corner style
+        button.backgroundColor = #colorLiteral(red: 0.08534555882, green: 0.02815807238, blue: 0.2609079778, alpha: 1)
+        button.layer.cornerRadius = 25.0
+        button.tintColor = UIColor.black
     }
     
     static func styleHollowButton(_ button:UIButton) {

@@ -51,9 +51,9 @@ class CompletedVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             currentUserRef.onDisconnectRemoveValue()
         }
         
-        ref.observe(.value, with: { snapshot in
-            print(snapshot.value as Any)
-        })
+//        ref.observe(.value, with: { snapshot in
+//            print(snapshot.value as Any)
+//        })
     }
     
     // MARK: - Table Functions
@@ -66,9 +66,10 @@ class CompletedVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         let cell = tableView.dequeueReusableCell(withIdentifier: "SurveyCell", for: indexPath) as! SurveyCell
         let survey = completedSurveys[indexPath.row]
         
-        cell.surveyLabel.text = "\(survey.sampleID) - \(survey.participantID)"
+        cell.surveyLabel.text = "\(survey.participantID) - \(survey.sampleID)"
         cell.surveyLabel.textAlignment = .center
-        cell.backgroundColor = #colorLiteral(red: 0.004859850742, green: 0.09608627111, blue: 0.5749928951, alpha: 1)
+        cell.surveyLabel.font = UIFont.boldSystemFont(ofSize: 25)
+        cell.backgroundColor = #colorLiteral(red: 0.3493356109, green: 0.8548207879, blue: 0.6642559171, alpha: 1)
         
         return cell
     }

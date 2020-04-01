@@ -12,9 +12,13 @@ class WelcomeVC: UIViewController {
     
     @IBOutlet weak var continueButton: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         setUpElement()
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewDidLoad() {
     }
     // MARK: - Other Functions
     

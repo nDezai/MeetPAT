@@ -21,7 +21,7 @@ class SurveyCell: UITableViewCell {
     
     let cellView: UIView = {
         let view = UIView()
-        view.backgroundColor = #colorLiteral(red: 0.2705882353, green: 0.4783383481, blue: 1, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.08534555882, green: 0.02815807238, blue: 0.2609079778, alpha: 1)
         view.layer.cornerRadius = 10
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -30,7 +30,7 @@ class SurveyCell: UITableViewCell {
     let surveyLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.textColor = .white
+        label.textColor = #colorLiteral(red: 1, green: 0.8798226118, blue: 0.2588033974, alpha: 1)
         label.font = UIFont.systemFont(ofSize: 25)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
