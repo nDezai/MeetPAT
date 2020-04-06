@@ -31,52 +31,65 @@ class LoginVC: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
-    @IBAction func loginPressed(_ sender: UIButton) {
-        loginUser()
-    }
+    // MARK: - Login into Study
     
-    @IBAction func registerPressed(_ sender: UIButton) {
-        registerUser()
-    }
-    
-    // MARK: - Login Function
-    
-    func loginUser () {
+    @IBAction func loginPressed(sender: UIButton) {
+        
         guard
-            let email = usernameTF.text,
-            let password = passwordTF.text,
-            email.count > 0,
-            password.count > 0
+            let email = usernameTF.text, email != "",
+            let password = passwordTF.text, password != ""
             else {
+                
+                let alertController = UIAlertController(title: "Login Error", message: "Both fields must not be blank.", preferredStyle: .alert)
+                let okayAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(okayAction)
+                present(alertController, animated: true, completion: nil)
+                
                 return
         }
         
-        Auth.auth().signIn(withEmail: email, password: password) { user, error in
-            if let error = error, user == nil {
-                let alert = UIAlertController(title: "Sign In Failed",
-                                              message: error.localizedDescription,
-                                              preferredStyle: .alert)
+        Auth.auth().signIn(withEmail: email, password: password, completion: { (result, error) in
+            
+            if let error = error {
+                let alertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: .alert)
+                let okayAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(okayAction)
+                self.present(alertController, animated: true, completion: nil)
                 
-                alert.addAction(UIAlertAction(title: "OK", style: .default))
-                
-                self.present(alert, animated: true, completion: nil)
+                return
             }
-        }
+            self.view.endEditing(true)
+        })
     }
     
-    // MARK: - Register Function
+    // MARK: - Registering Study
     
-    func registerUser() {
-        let email = usernameTF.text
-        let password = passwordTF.text
+    @IBAction func registerPressed(sender: UIButton) {
         
-        Auth.auth().createUser(withEmail: email!, password: password!) { user, error in
-            if error == nil {
-                Auth.auth().signIn(withEmail: self.usernameTF.text!,
-                                   password: self.passwordTF.text!)
-                self.alertAppear()
-            }
+        guard let email = usernameTF.text, email != "",
+            let password = passwordTF.text, password != "" else {
+                
+                let alertController = UIAlertController(title: "Registration Error", message: "Please make sure you provide a study email address and password to complete the registration.", preferredStyle: .alert)
+                let okayAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(okayAction)
+                present(alertController, animated: true, completion: nil)
+                
+                return
         }
+        
+        Auth.auth().createUser(withEmail: email, password: password, completion: { (result, error) in
+            
+            if let error = error {
+                let alertController = UIAlertController(title: "Registration Error", message: error.localizedDescription, preferredStyle: .alert)
+                let okayAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(okayAction)
+                self.present(alertController, animated: true, completion: nil)
+                
+                return
+            }
+            self.alertAppear()
+            self.view.endEditing(true)
+        })
     }
     
     // MARK: - Other Functions

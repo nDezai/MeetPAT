@@ -27,8 +27,13 @@ class StudyTabVC: UITabBarController {
             do {
                 try Auth.auth().signOut()
                 self.navigationController?.popToRootViewController(animated: true)
-            } catch let signOutError as NSError {
-                print("Error signing out: @%", signOutError)
+            } catch {
+                let alertController = UIAlertController(title: "Logout Error", message: error.localizedDescription, preferredStyle: .alert)
+                let okayAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(okayAction)
+                self.present(alertController, animated: true, completion: nil)
+                
+                return
             }}))
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(alertController, animated: true, completion: nil)
