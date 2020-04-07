@@ -20,8 +20,10 @@ class Study3VC: UIViewController {
     }
     
     @IBAction func finishPressed(_ sender: UIButton) {
-        let switchViewController = self.navigationController?.viewControllers[2] as! StudyTabVC
-        self.navigationController?.popToViewController(switchViewController, animated: true)
+        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CompletedVC") {
+        UIApplication.shared.keyWindow?.rootViewController = viewController
+        self.dismiss(animated: true, completion: nil)
+        }
     }
     
     // MARK: - Other Functions

@@ -63,7 +63,12 @@ class StudyScrollVC: UIViewController, UIScrollViewDelegate {
         overallSlider.addTarget(self, action: #selector(overallSliderChanged), for: UIControl.Event.valueChanged)
         
         scrollView.delegate = self
-        navigationItem.hidesBackButton = true
+        
+        let cancelButton = UIBarButtonItem()
+        cancelButton.title = "Cancel"
+        cancelButton.style = .done
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = cancelButton
+
         setUpElements()
         
         Auth.auth().addStateDidChangeListener { auth, user in

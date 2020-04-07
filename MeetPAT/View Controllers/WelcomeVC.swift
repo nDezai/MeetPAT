@@ -20,7 +20,7 @@ class WelcomeVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        if UserDefaults.standard.bool(forKey: "hasViewedWalkthrough") { return }
+//        if UserDefaults.standard.bool(forKey: "hasViewedWalkthrough") { return }
         let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
         if let onboardingVC = storyboard.instantiateViewController(withIdentifier: "OnboardingVC") as? OnboardingVC {
             present(onboardingVC, animated: true, completion: nil)

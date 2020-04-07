@@ -15,7 +15,7 @@ class StudyTabVC: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.setNavigationBarHidden(false, animated: false)
         navigationItem.hidesBackButton = true
     }
     

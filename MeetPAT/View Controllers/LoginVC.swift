@@ -59,6 +59,11 @@ class LoginVC: UIViewController {
                 return
             }
             self.view.endEditing(true)
+            
+            if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "StudyTabVC") {
+                UIApplication.shared.keyWindow?.rootViewController = viewController
+                self.dismiss(animated: true, completion: nil)
+            }
         })
     }
     
@@ -110,7 +115,6 @@ class LoginVC: UIViewController {
         
         // Hide the Error Label
         errorLabel.alpha = 0
-        
         Utilities.styleFilledButton(loginButton)
         Utilities.styleFilledButton(registerButton)
     }
