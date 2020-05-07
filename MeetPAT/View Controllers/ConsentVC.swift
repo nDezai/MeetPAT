@@ -35,7 +35,6 @@ class ConsentVC: UIViewController, ORKTaskViewControllerDelegate {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    
     @IBOutlet weak var consentButton: UIButton!
     
     override func viewDidLoad() {

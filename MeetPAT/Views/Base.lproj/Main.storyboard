@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MJp-OC-MOb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MJp-OC-MOb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -217,11 +217,11 @@
             <objects>
                 <viewController title="Consent" id="LFo-6u-d0l" customClass="ConsentVC" customModule="MeetPAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Akf-2C-j4e">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4h-8u-ZG9">
-                                <rect key="frame" x="50" y="628" width="314" height="60"/>
+                                <rect key="frame" x="50" y="540" width="314" height="60"/>
                                 <color key="backgroundColor" red="0.066666666669999999" green="0.0039215686269999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="7xb-QA-KWU"/>
@@ -237,7 +237,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gT1-Va-icN">
-                                <rect key="frame" x="50" y="188" width="314" height="340"/>
+                                <rect key="frame" x="50" y="100" width="314" height="340"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parrot" translatesAutoresizingMaskIntoConstraints="NO" id="tit-YJ-dzI">
                                         <rect key="frame" x="75.5" y="0.0" width="163" height="211"/>
@@ -278,6 +278,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oqq-s0-k4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4350.7246376811599" y="849.77678571428567"/>
+        </scene>
+        <!--Survey-->
+        <scene sceneID="mSu-EF-rRY">
+            <objects>
+                <navigationController id="KuV-r0-pjQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Survey" image="studentdesk" catalog="system" id="Dps-Ls-W5N"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="9B0-he-K7s">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.066666666669999999" green="0.0039215686269999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.30196078430000001" green="0.83529411760000005" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.066666666669999999" green="0.0039215686269999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="t2J-72-UZr" kind="relationship" relationship="rootViewController" id="Y05-5F-Dag"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDg-GY-Swv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3441" y="1621"/>
         </scene>
         <!--Start Study-->
         <scene sceneID="nuG-oa-VbO">
@@ -330,21 +353,29 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OVA-bc-Qch"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Survey Start" image="studentdesk" catalog="system" selectedImage="studentdesk" id="gRA-yg-grW">
+                    <tabBarItem key="tabBarItem" title="Survey" image="studentdesk" catalog="system" selectedImage="studentdesk" id="gRA-yg-grW">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" title="Survey" id="rPh-EA-S2t">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" image="house.fill" catalog="system" id="YrS-XF-Xq6">
+                            <color key="tintColor" red="0.066666666669999999" green="0.0039215686269999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="logOutPressed:" destination="t2J-72-UZr" id="KZK-ZU-npJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="startButton" destination="CIK-45-6F6" id="zb5-hf-uhJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Wj-gw-0Ch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3441" y="1570"/>
+            <point key="canvasLocation" x="4351" y="1621"/>
         </scene>
         <!--Scroll Study-->
         <scene sceneID="kLK-2U-QY5">
             <objects>
-                <viewController title="Scroll Study" automaticallyAdjustsScrollViewInsets="NO" id="0XV-KJ-rYg" customClass="StudyScrollVC" customModule="MeetPAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Scroll Study" automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="0XV-KJ-rYg" customClass="StudyScrollVC" customModule="MeetPAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AqY-45-rLF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="2312"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -882,7 +913,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TEA-Ro-hQN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="e6A-DU-O6t"/>
+                    <navigationItem key="navigationItem" title="Survey" id="e6A-DU-O6t"/>
                     <size key="freeformSize" width="414" height="2400"/>
                     <connections>
                         <outlet property="aFeelSlider" destination="vWw-Qs-Bxw" id="0Z3-et-s5f"/>
@@ -912,17 +943,17 @@
             <objects>
                 <viewController title="Study 3" id="aoj-yB-8hc" customClass="Study3VC" customModule="MeetPAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xXE-ot-Igj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5nH-8t-c0U">
-                                <rect key="frame" x="50" y="40" width="314" height="284"/>
+                                <rect key="frame" x="50" y="40" width="314" height="235"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parrot" translatesAutoresizingMaskIntoConstraints="NO" id="kVw-eT-fQo">
-                                        <rect key="frame" x="75.5" y="0.0" width="163" height="142"/>
+                                        <rect key="frame" x="75.5" y="0.0" width="163" height="117.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Thank you!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="420" translatesAutoresizingMaskIntoConstraints="NO" id="U34-Jr-Rev">
-                                        <rect key="frame" x="54.5" y="142" width="205.5" height="142"/>
+                                        <rect key="frame" x="54.5" y="117.5" width="205.5" height="117.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                         <color key="textColor" red="0.066666666669999999" green="0.0039215686269999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -930,7 +961,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press 'FINISH' to submit your responses" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="420" translatesAutoresizingMaskIntoConstraints="NO" id="TEx-xm-kGy">
-                                <rect key="frame" x="50" y="364" width="314" height="175"/>
+                                <rect key="frame" x="50" y="315" width="314" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="kXH-4S-FGA"/>
                                 </constraints>
@@ -939,7 +970,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mro-dg-PiW">
-                                <rect key="frame" x="50" y="589" width="314" height="60"/>
+                                <rect key="frame" x="50" y="540" width="314" height="60"/>
                                 <color key="backgroundColor" red="0.066666666669999999" green="0.0039215686269999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="P4N-Gz-VOP"/>
@@ -983,11 +1014,11 @@
             <objects>
                 <viewController storyboardIdentifier="CompletedVC" title="CompletedVC" id="9Aj-lD-Env" customClass="CompletedVC" customModule="MeetPAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qEA-4B-2Cb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0en-Rm-f4m">
-                                <rect key="frame" x="50" y="108" width="314" height="100"/>
+                                <rect key="frame" x="50" y="20" width="314" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNy-6l-6sc">
                                         <rect key="frame" x="107.5" y="0.0" width="99.5" height="50"/>
@@ -1007,7 +1038,7 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" sectionIndexMinimumDisplayRowCount="10" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nks-A7-9cc">
-                                <rect key="frame" x="0.0" y="228" width="414" height="565"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="565"/>
                                 <color key="backgroundColor" red="0.30196078430000001" green="0.83529411760000005" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1079,7 +1110,7 @@
                         <outlet property="logOutButton" destination="JY3-W0-WQM" id="LW6-bn-Wka"/>
                         <segue destination="fDh-ST-opd" kind="relationship" relationship="viewControllers" id="Y4g-gI-fFX"/>
                         <segue destination="gWa-jh-zo2" kind="relationship" relationship="viewControllers" id="OHC-4Y-DaM"/>
-                        <segue destination="t2J-72-UZr" kind="relationship" relationship="viewControllers" id="LaX-g5-4Mb"/>
+                        <segue destination="KuV-r0-pjQ" kind="relationship" relationship="viewControllers" id="B9w-iR-i9a"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MtS-YX-Ua6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1113,12 +1144,12 @@
         <!--Completed-->
         <scene sceneID="ro4-mD-kIs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fDh-ST-opd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Pre-Completed" automaticallyAdjustsScrollViewInsets="NO" id="fDh-ST-opd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Completed" image="tray.full.fill" catalog="system" selectedImage="tray.full.fill" id="QzU-27-14q">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jdf-Oe-hjH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Jdf-Oe-hjH">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.066666666669999999" green="0.0039215686269999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1143,12 +1174,12 @@
         <!--Consent-->
         <scene sceneID="ZZC-J6-zuc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gWa-jh-zo2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Consent" image="checkmark.seal.fill" catalog="system" id="iNs-wg-ECO">
+                <navigationController storyboardIdentifier="Pre-Consent" automaticallyAdjustsScrollViewInsets="NO" id="gWa-jh-zo2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Consent" image="doc.text.fill" catalog="system" id="iNs-wg-ECO">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8qt-F2-5nh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="8qt-F2-5nh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.066666666669999999" green="0.0039215686269999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1171,9 +1202,9 @@
     <resources>
         <image name="Faces3" width="357" height="78"/>
         <image name="Parrot" width="163" height="170"/>
-        <image name="checkmark.seal.fill" catalog="system" width="64" height="60"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
-        <image name="studentdesk" catalog="system" width="62" height="64"/>
-        <image name="tray.full.fill" catalog="system" width="64" height="44"/>
+        <image name="doc.text.fill" catalog="system" width="115" height="128"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="studentdesk" catalog="system" width="124" height="128"/>
+        <image name="tray.full.fill" catalog="system" width="128" height="88"/>
     </resources>
 </document>

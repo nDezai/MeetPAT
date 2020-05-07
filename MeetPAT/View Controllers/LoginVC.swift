@@ -23,6 +23,7 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         
         navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationItem.hidesBackButton = true
         setUpElements()
     }
     

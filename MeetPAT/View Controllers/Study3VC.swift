@@ -20,7 +20,7 @@ class Study3VC: UIViewController {
     }
     
     @IBAction func finishPressed(_ sender: UIButton) {
-        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CompletedVC") {
+        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "StudyTabVC") {
         UIApplication.shared.keyWindow?.rootViewController = viewController
         self.dismiss(animated: true, completion: nil)
         }
