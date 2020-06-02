@@ -13,7 +13,6 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var usernameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
-    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     
@@ -115,7 +114,6 @@ class LoginVC: UIViewController {
     func setUpElements() {
         
         // Hide the Error Label
-        errorLabel.alpha = 0
         Utilities.styleFilledButton(loginButton)
         Utilities.styleFilledButton(registerButton)
     }
