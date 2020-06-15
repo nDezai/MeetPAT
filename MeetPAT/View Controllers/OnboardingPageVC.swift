@@ -15,7 +15,7 @@ protocol OnboardingPageVCDelegate: class {
 class OnboardingPageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     var pageHeadings = ["MEDICINES", "COLLABORATION", "THE FUTURE"]
-    var pageSubHeadings = ["Many aspects of an everyday medicine can limit it's use in certain patient populations. This is particularly true for those medicines in the paediatric and geriatric age groups.",
+    var pageSubHeadings = ["Many aspects of an everyday medicine can limit its use in certain patient populations - particularly those in paediatric and geriatric age groups.",
                            "UCL School of Pharmacy and GlaxoSmithKline have partnered together to create a novel data collection tool for acceptability measures of a medicinal product, utilising scientifically proven questions and measures.",
                             "Well informed drug product design will allow a greater number of patients to take the right medicine, at the right dose, at the right time. This approach will enable greater personalisation of an individual's future treatment."]
     var pageImages = ["Onboarding1", "Onboarding2", "Onboarding3"]
