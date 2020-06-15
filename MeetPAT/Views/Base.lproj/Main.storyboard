@@ -126,7 +126,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WSA-0e-i6N" userLabel="Middle Stack View">
                                         <rect key="frame" x="0.0" y="195" width="315" height="220"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@test.com" borderStyle="roundedRect" placeholder="Study Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x8Y-ns-FzE">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Study Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x8Y-ns-FzE">
                                                 <rect key="frame" x="0.0" y="0.0" width="315" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -141,7 +141,7 @@
                                                 <color key="textColor" red="0.066666666669999999" green="0.0039215686269999999" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test1234" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SJe-ED-jjk">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SJe-ED-jjk">
                                                 <rect key="frame" x="0.0" y="160" width="315" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -394,7 +394,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="2312"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPy-DZ-TyY" userLabel="Container View">
-                                        <rect key="frame" x="-1" y="20" width="414" height="3912"/>
+                                        <rect key="frame" x="-1" y="20" width="414" height="3962"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete the Following" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IA-pS-gkT">
                                                 <rect key="frame" x="20" y="20" width="374" height="50"/>
@@ -906,7 +906,7 @@
                                     <constraint firstItem="tPy-DZ-TyY" firstAttribute="top" secondItem="qW4-ve-ioH" secondAttribute="top" constant="20" symbolic="YES" id="MyS-p8-lvR"/>
                                     <constraint firstItem="tPy-DZ-TyY" firstAttribute="width" secondItem="qW4-ve-ioH" secondAttribute="width" id="UDF-1b-OPq"/>
                                     <constraint firstItem="tPy-DZ-TyY" firstAttribute="top" secondItem="qW4-ve-ioH" secondAttribute="top" constant="20" symbolic="YES" id="giG-Q1-Asp"/>
-                                    <constraint firstItem="tPy-DZ-TyY" firstAttribute="height" secondItem="qW4-ve-ioH" secondAttribute="height" priority="250" constant="1600" id="kUM-Sw-Hpx"/>
+                                    <constraint firstItem="tPy-DZ-TyY" firstAttribute="height" secondItem="qW4-ve-ioH" secondAttribute="height" priority="250" constant="1650" id="kUM-Sw-Hpx"/>
                                     <constraint firstAttribute="trailing" secondItem="tPy-DZ-TyY" secondAttribute="trailing" constant="-1" id="mqR-Pw-2dn"/>
                                     <constraint firstAttribute="trailing" secondItem="tPy-DZ-TyY" secondAttribute="trailing" constant="-1" id="tbR-fc-m8O"/>
                                 </constraints>
@@ -915,7 +915,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tPy-DZ-TyY" firstAttribute="width" secondItem="AqY-45-rLF" secondAttribute="width" id="9gm-DW-kHw"/>
-                            <constraint firstItem="tPy-DZ-TyY" firstAttribute="height" secondItem="AqY-45-rLF" secondAttribute="height" priority="250" constant="1600" id="GXx-BX-Vnx"/>
+                            <constraint firstItem="tPy-DZ-TyY" firstAttribute="height" secondItem="AqY-45-rLF" secondAttribute="height" priority="250" constant="1650" id="GXx-BX-Vnx"/>
                             <constraint firstItem="qW4-ve-ioH" firstAttribute="top" secondItem="TEA-Ro-hQN" secondAttribute="top" id="i0J-VH-e7D"/>
                             <constraint firstItem="qW4-ve-ioH" firstAttribute="leading" secondItem="TEA-Ro-hQN" secondAttribute="leading" id="jQe-ca-iSk"/>
                             <constraint firstItem="qW4-ve-ioH" firstAttribute="trailing" secondItem="TEA-Ro-hQN" secondAttribute="trailing" id="kwu-ne-kXm"/>
